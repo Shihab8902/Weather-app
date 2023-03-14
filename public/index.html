@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="shortcut icon" href="../Images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google font cdn -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+
+                                <!-- Background blur effect container starts -->
+        <div class="blur-container">
+
+        <!-- Main section starts -->
+
+        <main>   
+             
+            <div class="temperature">
+                <p class="temp" id="temperature"><span id="tempUnit">00</span>C</p>
+            </div>
+
+            <div class="city-name">
+                <h2 class="city-name" id="cityName">Updating...</h2>
+                <p class="date-time" id="dateTime">Updating...</p>
+            </div>
+
+            <div class="weather-status">
+                <img src="../Images/icons/rain.png" alt="Rain" id="statusIcon">
+                <P id="statusInfo">Updating...</P>
+            </div>
+
+
+        </main>
+
+        <!-- Main section ends -->
+
+
+        <!-- Aside section starts -->
+
+        <aside>
+
+           <div class="search-box">
+                <input type="search" name="search-city" id="searchCity" placeholder="Search City..."> <span id="cityNameSeachButton"><i class="fa-solid fa-magnifying-glass"></i></span>
+           </div>
+
+           <div class="current-location">
+                <button id="currentLocationButton" title="Get Your Current Geographical Location"> <span><i class="fa-solid fa-location-crosshairs"></i></span> Get Current Location</button>
+           </div>
+            
+
+           <div class="weather-summary">
+                <h4 class="summary-heading">Weather Overview </h4><hr>
+                <div class="summary-sections">
+
+                    <div class="objects">
+                        <p class="temperature">Temperature</p>
+                        <p class="feels-like">Feels Like</p>
+                        <p class="wind-speed">Wind Speed</p>
+                        <p class="cloud-cover">Cloud Cover</p>
+                        <p class="sunrise">Sunrise</p>
+                        <p class="sunset">Sunset</p>
+                        <p class="current-city">Current City</p>
+                    </div>
+
+                    <div class="parameters">
+                        <p class="temperature-parameter">Updating...</p>
+                        <p class="feels-like-parameter">Updating...</p>
+                        <p class="wind-speed-parameter">Updating...</p>
+                        <p class="cloud-cover-parameter">Updating...</p>
+                        <p class="sunrise-parameter">Updating...</p>
+                        <p class="Sunset-parameter">Updating...</p>
+                        <p class="current-city-parameter">Updating...</p>
+                    </div>
+
+                </div>
+                
+           </div>
+        </aside>
+
+        <!-- Aside section ends -->
+
+
+
+        </div>
+    <!-- Background blur container ends -->
+
+    
+    
+
+   
+
+
+
+
+    <script src="../dist/index.js"></script>
+</body>
+
+</html>
